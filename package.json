@@ -26,6 +26,7 @@
     "node-mysql": "^0.4.2",
     "nodemon": "^1.10.2",
     "path": "^0.12.7",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "sequelize": "^3.24.3"
   }
 }

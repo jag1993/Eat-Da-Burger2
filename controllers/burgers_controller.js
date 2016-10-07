@@ -9,10 +9,9 @@ router.get('/', function (req, res) {
 });
 
 router.get('/burgers', function (req, res) {
-	burgers.showAll(function(data){
+	models.burgers.findAll({limit:10}).then(function(data){
 		var  burgersObject = {burgers:data};
-		res.render('index',burgersObject);
-	})
+	 	res.render('index',burgersObject);})
 });
 
 
@@ -22,9 +21,10 @@ router.post('/burgers/create', function (req, res) {
 	var condition = req.body.name;
 	var conditionFixed = condition.replace(/0|'|"|%|_/g, " ");
 	console.log(conditionFixed);
-	burgers.create('burger_name',conditionFixed,function () {
-		res.redirect('/burgers');
-	});
+	models.burgers.create({
+		burger_name:conditionFixed,
+		devoured:0
+	})
 });
 
 
