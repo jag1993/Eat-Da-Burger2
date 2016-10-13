@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "eomgel936hl45s91",
-    "password": otm09wldvfmyyupw,
+    "password": "otm09wldvfmyyupw",
     "database": "burgers_db",
     "host": " m7wltxurw8d2n21q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
