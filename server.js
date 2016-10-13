@@ -8,7 +8,7 @@ var models = require('./models');
 var sequelizeConnection = models.sequelize
 
 //future use
-// sequelizeConnection.sync();
+//sequelizeConnection.sync();
 
 app.set('port', (process.env.PORT || 3000));
 
