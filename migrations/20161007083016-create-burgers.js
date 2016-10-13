@@ -9,7 +9,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       devoured: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        defaultValue: 0
       },
       createdAt: {
         allowNull: false,
