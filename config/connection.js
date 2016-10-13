@@ -1,6 +1,6 @@
 var mysql = require('mysql');
-var Sequelize = require('sequelize');
-var connection;
+var Sequelize = require('sequelize'),
+ 	connection;
 
 
 
